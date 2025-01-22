@@ -1,7 +1,7 @@
 # portfolio
 
 
-![Project Logo](link-to-logo.png)
+![Image](link-to-logo.png)
 
 ## Description
 This is a web application that helps users track their daily tasks effectively. Built with Next.js and Tailwind CSS, it features a simple UI and powerful tools for productivity.
@@ -15,25 +15,10 @@ This is a web application that helps users track their daily tasks effectively. 
 
 
 ## Features
-- Task creation, editing, and deletion
-- Drag-and-drop prioritization
-- Light and dark mode support
+- Static web page that explains details about me. 
 
-- ## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/project-name.git
-
-
-## Usage
-- Open the app at [http://localhost:3000](http://localhost:3000).
-- Create an account or log in.
-- Start adding tasks to your list.
-
-![Screenshot](link-to-screenshot.png)
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+- ## Direct link To The Website
+1. www.google.ca
 
 ## Acknowledgments
 - Icons by [FontAwesome](https://fontawesome.com/).
