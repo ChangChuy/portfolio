@@ -17,7 +17,7 @@ This is a web application that helps users track their daily tasks effectively. 
 ## Features
 - Static web page that explains details about me. 
 
-- ## Direct link To The Website
+## Direct link To The Website
 1. www.google.ca
 
 ## Acknowledgments
