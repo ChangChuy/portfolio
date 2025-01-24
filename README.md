@@ -4,7 +4,7 @@
 ![Image](link-to-logo.png)
 
 ## Description
-This is a web application that helps users track their daily tasks effectively. Built with Next.js and Tailwind CSS, it features a simple UI and powerful tools for productivity.
+This is a web application that display my experience and past porjects. Built with Next.js and Tailwind CSS, it features a simple UI and ways to contact me.
 
 ## Table of Contents
 - [Features](#features)
@@ -15,10 +15,11 @@ This is a web application that helps users track their daily tasks effectively. 
 
 
 ## Features
-- Static web page that explains details about me. 
+- Mostly frontend display for now. 
 
 ## Direct link To The Website
 1. www.google.ca
+2. It is not live yet no CI/CD yet. 
 
 ## Acknowledgments
 - Icons by [FontAwesome](https://fontawesome.com/).
