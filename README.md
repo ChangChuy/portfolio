@@ -19,7 +19,8 @@ This is a web application that display my experience and past porjects. Built wi
 
 ## Direct link To The Website
 1. www.google.ca
-2. It is not live yet no CI/CD yet. 
+2. It is not live yet
+3. Once mvp is up will implemnt CI/CD. 
 
 ## Acknowledgments
 - Icons by [FontAwesome](https://fontawesome.com/).
