@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat_Alternates } from "next/font/google";
 import "./globals.css";
-import Header from './components/header';
+import Header from './components/Header';
+import PageTransition from "./components/PageTransition";
 
 
 const montserratAlternates = Montserrat_Alternates({
@@ -26,7 +27,9 @@ export default function RootLayout({
         className={`${montserratAlternates.className} ${montserratAlternates.className} antialiased`}
       >
         <Header />
+        <PageTransition>
         {children}
+        </PageTransition>
       </body>
     </html>
   );
