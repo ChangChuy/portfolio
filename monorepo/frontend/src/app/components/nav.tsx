@@ -30,15 +30,13 @@ const links = [
 
 // highlight the nav button when the use is currently at the path/url
 
-const Nav = () => {
+const Nav = ({}) => {
 
     const pathname = usePathname();
-    console.log(pathname);
     return (
         <nav className="flex gap-8">
             {links.map((link, index) => {
             const isActive = link.path === pathname;
-
             return (
             <Link
                 href={link.path}
