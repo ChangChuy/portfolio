@@ -3,7 +3,7 @@ import { Montserrat_Alternates } from "next/font/google";
 import "./globals.css";
 import Header from './components/Header';
 import PageTransition from "./components/PageTransition";
-import StairTransition from "./components/StairTransition";
+//import StairTransition from "./components/StairTransition";
 
 
 const montserratAlternates = Montserrat_Alternates({
