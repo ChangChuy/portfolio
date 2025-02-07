@@ -19,3 +19,8 @@ body {
   background: #1c1c22;
   font-family: 'Montserrat Alternates', sans-serif;
 }
+
+.page{
+  padding: 40px;
+  min-height: calc(100vh - 80px);
+}
