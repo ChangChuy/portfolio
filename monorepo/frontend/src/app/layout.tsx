@@ -29,8 +29,8 @@ export default function RootLayout({
         className={`${montserratAlternates.className} antialiased`}
       >
         <Header />
+        <PageTransition> {children}</PageTransition>
         <ParabolaTransition />
-        <PageTransition > {children}</PageTransition>
       </body>
     </html>
   );

@@ -24,11 +24,11 @@ const anim = (variants: Variants) => ({
 
 const routes: Record<string, string> = {
   
-  "/": "Home", 
-  "/services": "Services", 
-  "/resume": "Resume", 
-  "/project": "Project",
-  "/contact": "Contact", 
+  "/": "Home .", 
+  "/services": "Services .", 
+  "/resume": "Resume .", 
+  "/projects": "Projects .",
+  "/contact": "Contact .", 
 
 }
 
@@ -73,11 +73,13 @@ const ParabolaTransition = () => {
 
   return (
     <div className="p-10 min-h-[calc(100vh-80px)]" >
-      <AnimatePresence>
-        <motion.p {...anim(text)} className="absolute left-[44%] top-[40%] text-[46px] z-[3] text-center">{routes[pathname]}</motion.p>
-      </AnimatePresence>
-    <div className={`fixed inset-0 w-screen h-[calc(100vh+600px)] pointer-events-none ${dimensions.width === 0 ? "opacity-100" : "opacity-0"}`} />
-        {dimensions.width > 0 && <SVG {...dimensions}/>}
+      <div key={pathname}>
+        <AnimatePresence>
+          <motion.p {...anim(text)} className="absolute left-[44%] top-[40%] text-[46px] z-[3] text-center">{routes[pathname]}</motion.p>
+        </AnimatePresence>
+        <div className={`fixed inset-0 w-screen h-[calc(100vh+600px)] pointer-events-none ${dimensions.width === 0 ? "opacity-100" : "opacity-0"}`} />
+            {dimensions.width > 0 && <SVG {...dimensions}/>}
+      </div>
     </div>
   )
 }
