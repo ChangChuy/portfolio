@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Nav from "./Nav";
-
+import ParabolaTransition from "./ParabolaTransition";
 
 const Header = () => {
   return (
