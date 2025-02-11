@@ -2,33 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation"
-
-
-const links = [ 
-    {
-        name: "home",
-        path: "/",
-    },
-    {
-        name: "services",
-        path: "/services",
-    },
-    {
-        name: "resume",
-        path: "/resume",
-    },
-    {
-        name: "projects",
-        path: "/projects",
-    },
-    {
-        name: "contact",
-        path: "/contact",
-    },
-]
-
-
-// highlight the nav button when the use is currently at the path/url
+import { links } from "../lib/links"
 
 const Nav = ({}) => {
 
