@@ -1,15 +1,9 @@
-'use client'
-
 import Link from "next/link";
 import Nav from "./Nav";
 import ParabolaTransition from "./ParabolaTransition";
 import MobileNav from "./MobileNav"; 
-import { useState } from "react"
-
 
 const Header = () => {
-
-  const [sidebarOpen, setSidebarOpen] = useState(false); 
 
 
   return (
