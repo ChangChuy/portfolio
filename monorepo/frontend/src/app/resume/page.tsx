@@ -229,7 +229,6 @@ const Resume = () => {
                           </div>
                           <div
                             id={skill.name}
-                            role="tooltip"
                             className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-2 
                                     invisible opacity-0 group-hover:visible group-hover:opacity-100 
                                     transition-opacity duration-300 px-3 py-2 text-sm font-medium 
