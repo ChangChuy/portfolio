@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css"
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 
 import Link from "next/link"; 
@@ -77,6 +78,11 @@ const applications = [
 
 const Projects = () => {
 
+  const handleSlideChange = (swiper: { activeIndex: any; }) => {
+    const currentIndex = swiper.activeIndex;
+    setApplication(applications[currentIndex]); 
+
+  }
 
   const [application, setApplication] = useState(applications[0]);
 
@@ -84,7 +90,7 @@ const Projects = () => {
     <motion.div  initial={{opacity:0}} animate={{opacity: 1}} className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
-          <div className="w-full xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none"> 
+          <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none"> 
             <div className="flex flex-col gap-[20px] h-[50%]">
               <div className="text-8xl leading-none font-extrabold text-transparent" style={{ WebkitTextStroke: "2px white" }}>
                 {application.num}
@@ -122,8 +128,17 @@ const Projects = () => {
               </div>
             </div>     
           </div>
-          <div>
-            slider
+          <div className="w-full xl:w-[50%]">
+            <Swiper spaceBetween={30} slidesPerView={1} className="xl:h-[520px] mb-12" onSlideChange={handleSlideChange}>
+              {applications.map((project, index) => {
+
+                return (
+                    <SwiperSlide key={index} className="w-full">
+                      slide
+                    </SwiperSlide>
+                )
+              })}
+            </Swiper> 
           </div>
           <div>
           </div>
