@@ -7,7 +7,8 @@ import "swiper/css"
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 
 import Link from "next/link"; 
-import image from "next/image"; 
+import Image from "next/image"; 
+import SliderBtns from "../components/SliderBtns";
 
 const applications = [
 
@@ -17,16 +18,7 @@ const applications = [
     title: "Project 1", 
     description: "description for PalMaple",
     stack: [ {name: "Godot"}, {name: "GDScript"}],
-    image: "/",
-    github: "", 
-  }, 
-  {
-    num: '01', 
-    category: 'Game',
-    title: "Project 1", 
-    description: "description for PalMaple",
-    stack: [ {name: "Godot"}, {name: "GDScript"}],
-    image: "/",
+    image: "/Pong_Image.png",
     github: "", 
   }, 
   {
@@ -35,7 +27,7 @@ const applications = [
     title: "Project 2", 
     description: "description for PalPlumber",
     stack: [ {name: "Godot"}, {name: "GDScript"}],
-    image: "/",
+    image: "/Pong_Image.png",
     github: "", 
   }, 
   {
@@ -44,7 +36,7 @@ const applications = [
     title: "Project 3", 
     description: "description for Pong",
     stack: [ {name: "Godot"}, {name: "GDScript"} ],
-    image: "/",
+    image: "/Pong_Image.png",
     github: "", 
   }, 
   {
@@ -53,7 +45,7 @@ const applications = [
     title: "Project 4", 
     description: "description for RockPaperSciessorSimulator",
     stack: [ {name: "Godot"}, {name: "GDScript"} ],
-    image: "/",
+    image: "/Pong_Image.png",
     github: "", 
   },
   {
@@ -62,7 +54,7 @@ const applications = [
     title: "Project 5", 
     description: "description for E-Commerce Website",
     stack: [ {name: "Html 5"}, {name: "Css 3"}, {name: "Javascript"}],
-    image: "/",
+    image: "/Pong_Image.png",
     github: "", 
   },
   {
@@ -71,7 +63,7 @@ const applications = [
     title: "Project 6", 
     description: "description for E-Commerce Website",
     stack: [ {name: "Html 5"}, {name: "Css 3"}, {name: "Javascript"}],
-    image: "/",
+    image: "/Pong_Image.png",
     github: "", 
   },
 ]
@@ -87,7 +79,7 @@ const Projects = () => {
   const [application, setApplication] = useState(applications[0]);
 
   return (
-    <motion.div  initial={{opacity:0}} animate={{opacity: 1}} className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0">
+    <motion.div  initial={{opacity:0}} animate={{opacity: 1, transition: {delay: 1.5, duration: 0.4, ease: "easeIn"} }} className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none"> 
@@ -134,13 +126,17 @@ const Projects = () => {
 
                 return (
                     <SwiperSlide key={index} className="w-full">
-                      slide
+                      <div className="h-[460px] relative group flex justify-center items-center">
+                        <div></div>
+                        <div className="relative w-full h-full">
+                          <Image src={project.image} fill className="object-contain object-center" alt=""/>
+                        </div>
+                      </div>
                     </SwiperSlide>
                 )
               })}
+              <SliderBtns containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"/>
             </Swiper> 
-          </div>
-          <div>
           </div>
         </div>
       </div>
