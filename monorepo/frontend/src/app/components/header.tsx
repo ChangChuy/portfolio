@@ -4,7 +4,6 @@ import MobileNav from "./MobileNav";
 
 const Header = () => {
 
-
   return (
     <header className="py-8 xl:py-12 text-white">
       <nav>
