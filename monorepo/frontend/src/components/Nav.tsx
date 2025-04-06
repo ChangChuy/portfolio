@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation"
-import { links } from "../lib/links"
+import { links } from "../app/lib/links"
 
 const Nav = ({}) => {
 

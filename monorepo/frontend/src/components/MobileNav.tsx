@@ -3,7 +3,7 @@
 // import { Sheet, SheetContent, SheetTrigger } from '@/component/ui/sheet'
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { links } from "../lib/links";
+import { links } from "../app/lib/links";
 import { useState } from "react";
 
 const MobileNav = () => {

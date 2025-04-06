@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { Montserrat_Alternates } from "next/font/google";
 import "./globals.css";
-import Header from './components/Header';
-import PageTransition from "./components/PageTransition";
-//import StairTransition from "./components/StairTransition";
-import ParabolaTransition from "./components/ParabolaTransition";
+import Header from '../components/Header';
+import PageTransition from "../components/PageTransition";
+import ParabolaTransition from "../components/ParabolaTransition";
 
 
 const montserratAlternates = Montserrat_Alternates({

@@ -1,7 +1,7 @@
 import { FiDownload } from "react-icons/fi";
-import SocialButtons from "./components/SocialButtons";
-import Photo from "./components/Photo";
-import Stats from "./components/Stats";
+import SocialButtons from "../components/SocialButtons";
+import Photo from "../components/Photo";
+import Stats from "../components/Stats";
 
 
 

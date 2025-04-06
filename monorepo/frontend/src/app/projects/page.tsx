@@ -8,7 +8,7 @@ import { BsGithub } from "react-icons/bs";
 
 import Link from "next/link"; 
 import Image from "next/image"; 
-import SliderBtns from "../components/SliderBtns";
+import SliderBtns from "../../components/SliderBtns";
 
 const applications = [
 
