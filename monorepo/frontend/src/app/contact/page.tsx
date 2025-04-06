@@ -28,11 +28,6 @@ const info = [
 
 const Contact = () => {
 
-  const [selected, setSelected] = useState("");
-
-  const handleChange = (e) => {
-    setSelected(e.target.value);
-  };
 
   return (
     <motion.section initial={{ opacity: 0}} animate={{opacity: 1, transition: {delay: 1.5, duration: 0.4, ease: "easeIn"}}} className="py-6">

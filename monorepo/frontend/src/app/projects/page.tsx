@@ -14,11 +14,11 @@ const applications = [
 
   {
     num: '01', 
-    category: 'Game',
+    category: 'PalMaple',
     title: "Project 1", 
     description: "description for PalMaple",
     stack: [ {name: "Godot"}, {name: "GDScript"}],
-    image: "/Pong_Image.png",
+    image: "/PalMaple_Image.png",
     github: "", 
   }, 
   {
@@ -27,7 +27,7 @@ const applications = [
     title: "Project 2", 
     description: "description for PalPlumber",
     stack: [ {name: "Godot"}, {name: "GDScript"}],
-    image: "/Pong_Image.png",
+    image: "/PalPlumber_Image.png",
     github: "", 
   }, 
   {
@@ -45,25 +45,7 @@ const applications = [
     title: "Project 4", 
     description: "description for RockPaperSciessorSimulator",
     stack: [ {name: "Godot"}, {name: "GDScript"} ],
-    image: "/Pong_Image.png",
-    github: "", 
-  },
-  {
-    num: '05', 
-    category: 'E-Commerce Website',
-    title: "Project 5", 
-    description: "description for E-Commerce Website",
-    stack: [ {name: "Html 5"}, {name: "Css 3"}, {name: "Javascript"}],
-    image: "/Pong_Image.png",
-    github: "", 
-  },
-  {
-    num: '06', 
-    category: 'E-Commerce Website',
-    title: "Project 6", 
-    description: "description for E-Commerce Website",
-    stack: [ {name: "Html 5"}, {name: "Css 3"}, {name: "Javascript"}],
-    image: "/Pong_Image.png",
+    image: "/RockPaperScissor_Image.png",
     github: "", 
   },
 ]
