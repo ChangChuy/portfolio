@@ -14,11 +14,11 @@ export default function Home() {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl text-[25px]">Software Developer</span>
             <h1 className="h1 mb-6">
-              Hello I'm <br />
+              Hello I&apos;m <br />
               <span className="text-lightGreen">Chang Chuy</span>
             </h1>
             <p className="max-w-[500px] text-[24px] mb-9 text-white/80 mx-auto">
-              I'm a software engineer, I have accumulated 4+ years of experience building various side gaming projects with Godot, web apps with JavaScript, React, SQL/NoSQL/GraphQL. Over 4 years of programming experience with a strong drive to work under time constraints and collaborate effectively with teams.
+              I&apos;m a software engineer, I have accumulated 4+ years of experience building various side gaming projects with Godot, web apps with JavaScript, React, SQL/NoSQL/GraphQL. Over 4 years of programming experience with a strong drive to work under time constraints and collaborate effectively with teams.
             </p>
             {/* Buttons for socials */}
             <div className="flex flex-col xl:flex-row items-center gap-6">

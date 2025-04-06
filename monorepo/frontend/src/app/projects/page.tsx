@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 
 import Link from "next/link"; 
 import Image from "next/image"; 
@@ -52,11 +52,14 @@ const applications = [
 
 const Projects = () => {
 
-  const handleSlideChange = (swiper: { activeIndex: any; }) => {
+  interface SwiperType {
+    activeIndex: number;
+  }
+  
+  const handleSlideChange = (swiper: SwiperType) => {
     const currentIndex = swiper.activeIndex;
     setApplication(applications[currentIndex]); 
-
-  }
+  };
 
   const [application, setApplication] = useState(applications[0]);
 

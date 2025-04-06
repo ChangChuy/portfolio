@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Nav from "./Nav";
-import ParabolaTransition from "./ParabolaTransition";
 import MobileNav from "./MobileNav"; 
 
 const Header = () => {
